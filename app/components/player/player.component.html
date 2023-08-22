@@ -1,0 +1,15 @@
+<div class="item">
+  <button class="btn btn-danger col-lg-11" (click)="passId(player.id)">Delete</button>
+  <div class="video-media" >
+    <img src="{{player.path}}" alt="Image" class="img-fluid">
+    <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+      <span class="icon mr-3">
+        <span class="icon-play"></span>
+      </span>
+      <div class="caption">
+        <span class="meta">#{{player.order}} / Forward</span>
+        <h3 class="m-0">{{player.firstName}} {{player.listName}}</h3>
+      </div>
+    </a>
+  </div>
+</div>
