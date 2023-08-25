@@ -1,0 +1,33 @@
+<app-banner [title]="'EditPlayer'"></app-banner>
+
+
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <form #editPlayerForm="ngForm" (ngSubmit)="editPlayer()">
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="findedPlayer.firstName" [ngModelOptions]="{standalone: true}"
+              placeholder=" first Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="findedPlayer.listName" [ngModelOptions]="{standalone: true}"
+              placeholder="list Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="findedPlayer.order" [ngModelOptions]="{standalone: true}"
+              placeholder="order player">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="findedPlayer.path" [ngModelOptions]="{standalone: true}"
+              placeholder="path img">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary py-3 px-5">Edit Player</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
